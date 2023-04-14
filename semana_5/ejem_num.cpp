@@ -10,14 +10,15 @@ using namespace std;
 
 int contarDigitosDeNumero(long long n) {
     int cont = 0;
-    while(n >= 0) {
+    while(n > 0) {
         n /= 10;
+        cont++;
     }
     return cont;
 }
 
 int main() {
-    cout << contarDigitosDeNumero(12341234) << endl;
+    cout << contarDigitosDeNumero(1000000) << endl;
 
     return 0;
 }
